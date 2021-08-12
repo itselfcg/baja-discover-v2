@@ -1,8 +1,9 @@
 
-@import url(./colors.scss);
+@import './_variables.scss';
+@import './node_modules/bootstrap/scss/bootstrap.scss';
 
-.color-green{
-  color: var(--color-green);
+.text-green{
+  color: $color-green;
 }
 
 
