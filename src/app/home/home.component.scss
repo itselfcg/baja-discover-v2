@@ -1,0 +1,29 @@
+.home {
+  background-image: url("/assets/pictures/home.jpg");
+  background-size: cover;
+  background-color: gray;
+  height: 100vh;
+  min-height: 800px;
+}
+
+.title {
+  position: relative;
+  width: 80%;
+  top: 15em;
+  color: white;
+}
+
+.highlight {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .highlight {
+    word-spacing: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .break-text {
+    word-spacing: 9999999px;
+  }
+}
