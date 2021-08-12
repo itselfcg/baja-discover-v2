@@ -1,0 +1,89 @@
+@import url(../../colors.scss);
+
+$padding-top: 3.5em;
+
+.logo {
+  height: auto;
+  width: 100px;
+}
+
+i{
+  font-size: 35px;
+  color: white;
+
+}
+
+.btn{
+  width: 150px;
+}
+
+.nav-item {
+  margin-left: 20px;
+  .nav-link {
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+
+.navbar {
+  z-index: 100;
+  position: relative;
+  width: 100%;
+  padding-top: $padding-top;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand,
+  .navbar-toggler {
+    z-index: 100;
+
+  }
+  .nav-item {
+    margin: 5px;
+    text-align: center;
+    .nav-link {
+      color: gray;
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+  .navbar {
+    position: absolute;
+  }
+  .navbar-collapse {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+    width: 100%;
+    background-color: rgba(236, 236, 236, 1);
+  }
+
+  .navbar-content {
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 992px) {
+  .phone {
+    display: block;
+  }
+}
+
+@media (min-width: 993px) {
+  .phone {
+    display: none;
+  }
+}
+
+.phone {
+  position: absolute;
+  font-size: 14px;
+  color: white;
+  top: $padding-top;
+}
