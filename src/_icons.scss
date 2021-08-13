@@ -1,0 +1,22 @@
+@import "./_variables.scss";
+
+@font-face {
+  font-family: 'Ranchers';
+  src: url(assets/fonts/Ranchers-Regular.ttf) format("opentype");
+}
+
+
+.bullet {
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  margin: 1rem 0 0.25rem;
+}
+
+.quote{
+  color:$color-pink;
+  font-size: 40px;
+  font-family: 'Ranchers';
+  line-height: .25em;
+
+}
