@@ -1,4 +1,8 @@
-.home {
+@import "../../_variables.scss";
+
+$picture-height: 35em;
+
+#home {
   background-image: url("/assets/pictures/home.jpg");
   background-size: cover;
   background-color: gray;
@@ -9,7 +13,7 @@
 .title {
   position: relative;
   width: 80%;
-  top: 15em;
+  top: 20em;
   color: white;
 }
 
@@ -18,6 +22,11 @@
 }
 
 @media (max-width: 768px) {
+  .title {
+
+    top: 15em;
+  }
+
   .highlight {
     word-spacing: 0px;
   }
@@ -25,5 +34,11 @@
 @media (max-width: 500px) {
   .break-text {
     word-spacing: 9999999px;
+  }
+}
+
+@media (min-width: 768px) {
+  #about {
+    margin: 10em 0 7.5em 0;
   }
 }

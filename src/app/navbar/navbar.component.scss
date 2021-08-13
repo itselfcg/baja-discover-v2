@@ -1,6 +1,14 @@
 
 $padding-top: 3.5em;
 
+
+
+.navbar {
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  padding-top: $padding-top;
+}
 .logo {
   height: auto;
   width: 100px;
@@ -25,12 +33,6 @@ i{
   }
 }
 
-.navbar {
-  z-index: 100;
-  position: relative;
-  width: 100%;
-  padding-top: $padding-top;
-}
 
 @media (max-width: 768px) {
   .navbar-brand,
