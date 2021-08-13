@@ -8,7 +8,12 @@ $color-gray:#636363;
 $color-light-gray: #d6d6d6;
 
 $theme-colors: (
-  "primary":    $color-pink
+  "primary":    $color-pink,
+  "secondary":$color-green
 );
 
-$min-contrast-ratio:3;
+$min-contrast-ratio:1;
+$max-width: 300px;
+$max-heigh: 150px;
+$md-container: 60%;
+$lg-container: 75%;

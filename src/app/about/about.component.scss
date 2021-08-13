@@ -1,12 +1,21 @@
 @import "../../_variables.scss";
 
+
 #about {
   margin: 10em 0 2em 0;
 }
+.stadistics {
+  margin: 5em 0 5em 0;
+
+
+}
 
 @media (max-width: 767px) {
-  .service {
+  .stadistics {
     width: 100%;
+
+  }
+  .service {
     text-align: center;
     flex-direction: column;
     display: flex;
@@ -16,15 +25,11 @@
 }
 
 
-.service {
-  margin: 2em 0 2em;
-}
 
 .stadistics {
+  width: $md-container;
   border-radius: 15px;
-  max-width: 75%;
-  margin: 2em;
-  padding: 2em;
+
   text-align: center;
   box-shadow: -1px -2px 51px 0px rgba(0, 0, 0, 0.11);
 
@@ -38,17 +43,5 @@
   .info {
     padding: 2em;
     margin: auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .stadistics {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .stadistics {
-    max-width: 50%;
   }
 }

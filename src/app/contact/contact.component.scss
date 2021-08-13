@@ -1,0 +1,64 @@
+@import "../../_variables.scss";
+
+
+#contact {
+  margin: 5em 0 5em 0;
+}
+
+.media {
+  width: $lg-container;
+  margin: 1em 0 1em 0;
+}
+.info {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: $max-heigh;
+  box-shadow: -1px -2px 51px 0px rgba(0, 0, 0, 0.11);
+  border-radius: 15px;
+  p {
+    overflow-wrap: break-word;
+
+    margin: 1em;
+    font-weight: 500;
+    font-size: 13px;
+    color: $color-gray;
+  }
+}
+
+.form {
+  width: $md-container;
+
+  margin: 1em;
+  box-shadow: -1px -2px 51px 0px rgba(0, 0, 0, 0.11);
+  border-radius: 15px;
+  label {
+    margin: 1em 0 1em;
+    font-weight: 500;
+    font-size: 14px;
+    color: $color-charcoal;
+  }
+}
+.form-groups {
+  margin: 1em;
+}
+
+.submit {
+  text-align: center;
+  width: 100%;
+  padding: 2em;
+}
+
+.submit .btn {
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .form {
+    width: $lg-container;
+  }
+  .submit .btn {
+    width: 100%;
+  }
+}
