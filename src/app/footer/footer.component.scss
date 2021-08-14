@@ -1,0 +1,95 @@
+ @import "../../_variables.scss";
+
+footer {
+  background-image: url("/assets/pictures/footer.jpg");
+  background-size: cover;
+  height: 100%;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.bullet {
+  display: inline-flex;
+  margin:3px;
+}
+
+.content{
+  padding-top: 5em;
+  padding-bottom: 2em;
+
+}
+#footer {
+  width: 100%;
+  color: white !important;
+
+  .nav-link {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    color: white !important;
+  }
+  h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: white !important;
+  }
+}
+
+
+.subfooter {
+  padding-top: 2em;
+}
+
+.copyright {
+  color: white;
+  text-align: right;
+  margin: auto;
+}
+@media (max-width: 767px) {
+  .copyright {
+    text-align: center;
+  }
+  #footer {
+    text-align: center;
+  }
+}
+
+.form {
+  bottom: 0px !important;
+  width: $md-container;
+  background-color: white;
+  box-shadow: -1px -2px 51px 0px rgba(0, 0, 0, 0.11);
+  border-radius: 15px;
+  label {
+    margin: 1em 0 1em;
+    font-weight: 500;
+    font-size: 14px;
+    color: $color-charcoal;
+  }
+}
+.form-groups {
+  margin: 1em;
+}
+
+
+.submit {
+  text-align: center;
+  width: 100%;
+  padding: 2em;
+}
+
+.submit .btn {
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .form {
+    width: $lg-container;
+  }
+  .submit .btn {
+    width: 100%;
+  }
+}
+
