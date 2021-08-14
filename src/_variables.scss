@@ -19,3 +19,11 @@ $max-width: 300px;
 $max-heigh: 150px;
 $md-container: 60%;
 $lg-container: 75%;
+
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1080px
+) !default;
