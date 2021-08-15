@@ -1,0 +1,82 @@
+@import "../_variables.scss";
+
+#scroll .scrolldown{
+  position: fixed;
+  left: 50%;
+  bottom: 2%;
+  z-index: 2;
+}
+
+#scroll .scrollup {
+  position: fixed;
+  left: 90%;
+  bottom: 0%;
+  z-index: 2;
+}
+
+
+#scroll {
+  a {
+    padding-top: 70px;
+  }
+  a:hover {
+    opacity: 0.5;
+  }
+  .scrolldown span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transform: rotate(-45deg);
+    animation: fade-down 1.5s infinite;
+    box-sizing: border-box;
+  }
+
+  .scrollup span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 2px solid $color-light-gray;
+    border-bottom: 2px solid $color-light-gray;
+    transform: rotate(145deg);
+    animation: fade-up 2.5s infinite;
+    box-sizing: border-box;
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+    opacity: 0;
+  }
+}
+
+
+@keyframes fade-up {
+  0% {
+    transform: rotate(135deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(135deg) translate(-10px, 10px);
+    opacity: 0;
+  }
+}
+
