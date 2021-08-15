@@ -10,7 +10,7 @@ declare var $: any;
 export class AppComponent implements OnInit {
   title = 'baja-discover-v2';
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({once: true});
 
     $(document).scroll(function () {
       var x = $(document).scrollTop();
