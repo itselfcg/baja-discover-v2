@@ -1,6 +1,11 @@
 <div id="about">
   <div class="container">
-    <div class="row">
+    <div
+      class="row"
+      data-aos="fade-down"
+      data-aos-duration="500"
+      data-aos-offset="0"
+    >
       <div class="col-12 col-sm-5">
         <h2>ABOUT US</h2>
         <h3>Our vision is to make your travel stress free</h3>
@@ -14,7 +19,7 @@
         </p>
       </div>
     </div>
-    <div class="centered">
+    <div class="centered" data-aos="zoom-in" data-aos-duration="800">
       <div class="row stadistics show-small">
         <div class="col-12 col-md info">
           <h3>25+</h3>
@@ -37,8 +42,22 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6 img-wrapper order-last order-md-first">
-        <img class="lg-img" src="/assets/pictures/services.jpg" />
-        <span class="label">
+        <img
+          id="ad1"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          class="lg-img"
+          src="/assets/pictures/services.jpg"
+        />
+        <span
+          class="label"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1500"
+          data-aos-delay="500"
+          data-aos-anchor="#service3"
+        >
           <div class="row">
             <div class="col name">Lorem ipsum dolor sit</div>
           </div>
@@ -49,24 +68,49 @@
         </span>
       </div>
       <div class="col-12 col-md-6 my-auto">
-        <h2>WHAT WE SERVE</h2>
-        <h3>Top values for you</h3>
+        <div
+          id="serve"
+          data-aos="fade-left"
+          data-aos-delay="150"
+          data-aos-offset="100"
+        >
+          <h2>WHAT WE SERVE</h2>
+          <h3>Top values for you</h3>
+        </div>
 
-        <div class="service">
+        <div
+          id="service1"
+          class="service"
+          data-aos="fade-left"
+          data-aos-delay="300"
+          data-aos-anchor="#serve"
+        >
           <div class="bullet bg-orange"></div>
           <h6>Lorem ipsum dolor sit amet</h6>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           </p>
         </div>
-        <div class="service">
+        <div
+          id="service2"
+          class="service"
+          data-aos="fade-left"
+          data-aos-delay="600"
+          data-aos-anchor="#service1"
+        >
           <div class="bullet bg-pink"></div>
           <h6>Lorem ipsum dolor sit amet</h6>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           </p>
         </div>
-        <div class="service">
+        <div
+          id="service3"
+          class="service"
+          data-aos="fade-left"
+          data-aos-delay="900"
+          data-aos-anchor="#service2"
+        >
           <div class="bullet bg-green"></div>
           <h6>Lorem ipsum dolor sit amet</h6>
           <p>
@@ -76,7 +120,13 @@
       </div>
     </div>
 
-    <div class="centered">
+    <div
+      class="centered"
+      data-aos="zoom-in"
+      data-aos-duration="800"
+      data-aos-delay="200"
+      data-aos-offset="200"
+    >
       <div class="row stadistics hide-small">
         <div class="col-12 col-sm info">
           <h3>25+</h3>

@@ -4,6 +4,10 @@
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 
+body{
+  overflow-x: hidden;
+}
+
 .text-green {
   color: $color-green;
 }
