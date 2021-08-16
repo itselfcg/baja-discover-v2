@@ -1,15 +1,20 @@
 <div id="tours">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md" data-aos="fade-right" data-aos-delay="150" data-aos-offset="100">
+      <div
+        class="col-12 col-md"
+        data-aos="fade-right"
+        data-aos-delay="150"
+        data-aos-offset="100"
+      >
         <h2>OUR TOURS</h2>
         <h3>Explore Baja California</h3>
       </div>
       <div class="col-12 col-md-auto my-auto navigation" data-aos="zoom-out">
-        <button class="btn btn-action">
+        <button class="btn btn-action" [disabled]="curPage == 1" (click)="curPage = curPage - 1">
           <i class="bi bi-chevron-left"></i>
         </button>
-        <button class="btn btn-action">
+        <button class="btn btn-action" [disabled]="curPage >= tours.length/pageSize" (click)="curPage = curPage + 1">
           <i class="bi bi-chevron-right"></i>
         </button>
       </div>
@@ -21,55 +26,30 @@
       data-aos-offset="300"
       data-aos-easing="ease-in-sine"
     >
-      <div class="col-6 col-md-4">
-        <div class="card">
+      <div
+        class="col-6 col-md-4"
+        *ngFor="
+          let tour of tours
+            | slice: curPage * pageSize - pageSize:curPage * pageSize
+        ">
+        <div
+          class="card"
+          [ngClass]="{ 'card-selected': toursSelected.name == tour.name }"
+          (click)="selectTour(tour)"
+        >
           <img
             class="card-img-top"
-            src="/assets/pictures/wine.jpg"
+            src="{{ tour.picture }}"
             alt="Card image cap"
           />
           <div class="card-body">
-            <h6 class="card-title">Lorem ipsum dolor sit</h6>
+            <h6 class="card-title">{{ tour.name }}</h6>
             <div class="row">
-              <div class="col-auto"><span class="price">$$$</span></div>
-              <div class="col text-end">
-                <span class="location">Lorem ipsum dolor sit</span>
+              <div class="col-auto">
+                <span class="price">{{ tour.price }}</span>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4">
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="/assets/pictures/wine.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h6 class="card-title">Lorem ipsum dolor sit</h6>
-            <div class="row">
-              <div class="col-auto"><span class="price">$$$</span></div>
               <div class="col text-end">
-                <span class="location">Lorem ipsum dolor sit</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-4 hide-medium">
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="/assets/pictures/wine.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h6 class="card-title">Lorem ipsum dolor sit</h6>
-            <div class="row">
-              <div class="col-auto"><span class="price">$$$</span></div>
-              <div class="col text-end">
-                <span class="location">Lorem ipsum dolor sit</span>
+                <span class="location">{{ tour.location }}</span>
               </div>
             </div>
           </div>
@@ -82,14 +62,9 @@
           <div class="row g-0">
             <div class="col">
               <div class="card-block p-4">
-                <h6 class="card-title">Lorem ipsum dolor sit</h6>
+                <h6 class="card-title">{{ toursSelected.name }}</h6>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus a purus ornare, vehicula magna vitae, tempor metus.
-                  Pellentesque habitant morbi tristique senectus et netus et
-                  malesuada fames ac turpis egestas. Donec laoreet sed lorem ac
-                  interdum. Etiam ut neque egestas, mattis mi vel, dignissim
-                  lorem.
+                  {{ toursSelected.description }}
                 </p>
                 <div class="about">
                   <div class="row">
@@ -98,9 +73,15 @@
                     <div class="col"><span class="label">Duration</span></div>
                   </div>
                   <div class="row">
-                    <div class="col"><span class="price">$500 USD</span></div>
-                    <div class="col"><span class="info">Group tour</span></div>
-                    <div class="col"><span class="info"> 2h - 12h </span></div>
+                    <div class="col">
+                      <span class="price">{{ toursSelected.price }}</span>
+                    </div>
+                    <div class="col">
+                      <span class="info">{{ toursSelected.type }}</span>
+                    </div>
+                    <div class="col">
+                      <span class="info"> {{ toursSelected.duration }} </span>
+                    </div>
                   </div>
                 </div>
                 <div class="actions">
@@ -111,7 +92,7 @@
             <div class="col-5 hide-medium">
               <img
                 class="card-img-right"
-                src="/assets/pictures/wine.jpg"
+                src="{{ toursSelected.picture }}"
                 alt=""
               />
             </div>

@@ -1,15 +1,26 @@
 import { Component, OnInit } from '@angular/core';
+import { Tour } from 'src/_model/tour';
+import tours from '../../_files/tours.json';
 
 @Component({
   selector: 'app-tours',
   templateUrl: './tours.component.html',
-  styleUrls: ['./tours.component.scss']
+  styleUrls: ['./tours.component.scss'],
 })
 export class ToursComponent implements OnInit {
+  tours: Tour[] = tours;
+  toursSelected: Tour = tours[0];
+  curPage: number = 1;
+  pageSize: number = 3;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  selectTour(tour: Tour) {
+    this.toursSelected=tour;
   }
-
+  numberOfPages() {
+    return Math.ceil(this.tours.length / this.pageSize);
+  };
 }

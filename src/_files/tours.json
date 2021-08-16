@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Lorem ipsum dolor sit",
+    "price": "$$$",
+    "location": "Tijuana",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a purus ornare, vehicula magna vitae, tempor metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec laoreet sed lorem ac interdum. Etiam ut neque egestas, mattis mi vel, dignissim lorem.",
+    "type": "Group tour",
+    "duration": "2h - 12h",
+    "picture":"/assets/pictures/wine.jpg"
+  },
+  {
+    "name": "Lorem ipsum dolor sit 2",
+    "price": "$$$",
+    "location": "Tijuana",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a purus ornare, vehicula magna vitae, tempor metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec laoreet sed lorem ac interdum. Etiam ut neque egestas, mattis mi vel, dignissim lorem.",
+    "type": "Group tour",
+    "duration": "2h - 12h",
+    "picture":"/assets/pictures/wine.jpg"
+  },
+  {
+    "name": "Lorem ipsum dolor sit 3" ,
+    "price": "$$$",
+    "location": "Tijuana",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a purus ornare, vehicula magna vitae, tempor metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec laoreet sed lorem ac interdum. Etiam ut neque egestas, mattis mi vel, dignissim lorem.",
+    "type": "Group tour",
+    "duration": "2h - 12h",
+    "picture":"/assets/pictures/wine.jpg"
+  },
+  {
+    "name": "Lorem ipsum dolor sit 4",
+    "price": "$$$",
+    "location": "Tijuana",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a purus ornare, vehicula magna vitae, tempor metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec laoreet sed lorem ac interdum. Etiam ut neque egestas, mattis mi vel, dignissim lorem.",
+    "type": "Group tour",
+    "duration": "2h - 12h",
+    "picture":"/assets/pictures/wine.jpg"
+  }
+]
