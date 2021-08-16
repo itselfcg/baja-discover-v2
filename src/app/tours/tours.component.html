@@ -11,10 +11,18 @@
         <h3>Explore Baja California</h3>
       </div>
       <div class="col-12 col-md-auto my-auto navigation" data-aos="zoom-out">
-        <button class="btn btn-action" [disabled]="curPage == 1" (click)="curPage = curPage - 1">
+        <button
+          class="btn btn-action"
+          [disabled]="curPage == 1"
+          (click)="curPage = curPage - 1;"
+        >
           <i class="bi bi-chevron-left"></i>
         </button>
-        <button class="btn btn-action" [disabled]="curPage >= tours.length/pageSize" (click)="curPage = curPage + 1">
+        <button
+          class="btn btn-action"
+          [disabled]="curPage >= tours.length / pageSize"
+          (click)="curPage = curPage + 1;"
+        >
           <i class="bi bi-chevron-right"></i>
         </button>
       </div>
@@ -28,10 +36,12 @@
     >
       <div
         class="col-6 col-md-4"
+        [@fadeIn]
         *ngFor="
           let tour of tours
             | slice: curPage * pageSize - pageSize:curPage * pageSize
-        ">
+        "
+      >
         <div
           class="card"
           [ngClass]="{ 'card-selected': toursSelected.name == tour.name }"
