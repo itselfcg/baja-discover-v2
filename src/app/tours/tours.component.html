@@ -14,14 +14,14 @@
         <button
           class="btn btn-action"
           [disabled]="curPage == 1"
-          (click)="curPage = curPage - 1;"
+          (click)="curPage = curPage - 1;animationStyle=100;"
         >
           <i class="bi bi-chevron-left"></i>
         </button>
         <button
           class="btn btn-action"
           [disabled]="curPage >= tours.length / pageSize"
-          (click)="curPage = curPage + 1;"
+          (click)="curPage = curPage + 1;animationStyle=-100;"
         >
           <i class="bi bi-chevron-right"></i>
         </button>
@@ -36,7 +36,7 @@
     >
       <div
         class="col-6 col-md-4"
-        [@fadeIn]
+        [@customAnimation]="{ value: ':enter', params: {translate: animationStyle } }"
         *ngFor="
           let tour of tours
             | slice: curPage * pageSize - pageSize:curPage * pageSize
@@ -95,7 +95,7 @@
                   </div>
                 </div>
                 <div class="actions">
-                  <a href="#" class="btn btn-primary">Book now</a>
+                  <a href="#contact" class="btn btn-primary">Book now</a>
                 </div>
               </div>
             </div>
