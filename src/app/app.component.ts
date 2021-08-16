@@ -11,6 +11,7 @@ export class AppComponent implements OnInit {
   title = 'baja-discover-v2';
   ngOnInit(): void {
     AOS.init({once: true});
+    $('.scrollup').stop().fadeOut(100);
 
     $(document).scroll(function () {
       var x = $(document).scrollTop();

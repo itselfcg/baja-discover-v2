@@ -1,108 +1,56 @@
 [
   {
-    "name": "Lorem ipsum dolor sit",
-    "price": "$$$",
-    "location": "Tijuana",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a purus ornare, vehicula magna vitae, tempor metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec laoreet sed lorem ac interdum. Etiam ut neque egestas, mattis mi vel, dignissim lorem.",
+    "name": "Wine Route",
+    "price": "$75 US / Person",
+    "location": "Ensenada, B.C.",
+    "description": "In this tour on the Wine Route you can enjoy and get to know the more than 80 wineries in the Guadalupe Valley, so you can know how the Guadalupe Valley came to be what it is today, taste its rich and highly awarded wines and taste its very rich gastronomy.",
     "type": "Group tour",
-    "duration": "2h - 12h",
-    "picture":"/assets/pictures/wine.jpg"
+    "duration": "6h",
+    "picture": "/assets/pictures/wine.jpg"
   },
   {
-    "name": "Lorem ipsum dolor sit 2",
-    "price": "$$$",
-    "location": "Tijuana",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a purus ornare, vehicula magna vitae, tempor metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec laoreet sed lorem ac interdum. Etiam ut neque egestas, mattis mi vel, dignissim lorem.",
+    "name": "La Bufadora Tour ",
+    "price": "$50 US / Person",
+    "location": "Ensenada, B.C.",
+    "description": "On this tour you will be able to see and enjoy beaches, horseback riding as well as eat delicious lobster with the original Margarita. You will also be able to witness one of the largest natural geysers in the world, “La Bufadora”.",
     "type": "Group tour",
-    "duration": "2h - 12h",
-    "picture":"/assets/pictures/wine.jpg"
+    "duration": "4h",
+    "picture": "/assets/pictures/bufadora.jpg"
   },
   {
-    "name": "Lorem ipsum dolor sit 3" ,
-    "price": "$$$",
-    "location": "Tijuana",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a purus ornare, vehicula magna vitae, tempor metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec laoreet sed lorem ac interdum. Etiam ut neque egestas, mattis mi vel, dignissim lorem.",
+    "name": "Baja 1000 Race",
+    "price": "$100 US / Person",
+    "location": "San Felipe, B.C.",
+    "description": "This is an experience you must live!  The Baja 1000 allows various types of vehicle classes to compete on the same course with classes for cars, trucks, motorcycles, ATVs and buggies.",
     "type": "Group tour",
-    "duration": "2h - 12h",
-    "picture":"/assets/pictures/wine.jpg"
+    "duration": "6h - 8h",
+    "picture": "/assets/pictures/baja-score.jpg"
   },
   {
-    "name": "Lorem ipsum dolor sit 4",
-    "price": "$$$",
-    "location": "Tijuana",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a purus ornare, vehicula magna vitae, tempor metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec laoreet sed lorem ac interdum. Etiam ut neque egestas, mattis mi vel, dignissim lorem.",
+    "name": "Gray Whale Tour",
+    "price": "$100 US / Person",
+    "location": "Ensenada, B.C.",
+    "description": "Sighting these colossi of the sea is an experience that you have to live. In season from December 15 to April 15, accompanied by a guide who gives the talk, on the trip you will also see other marine species, sea lions, dolphins, etc.",
     "type": "Group tour",
-    "duration": "2h - 12h",
-    "picture":"/assets/pictures/wine.jpg"
-  }, {
-    "name": "Lorem ipsum dolor sit 5",
-    "price": "$$$",
-    "location": "Tijuana",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a purus ornare, vehicula magna vitae, tempor metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec laoreet sed lorem ac interdum. Etiam ut neque egestas, mattis mi vel, dignissim lorem.",
-    "type": "Group tour",
-    "duration": "2h - 12h",
-    "picture":"/assets/pictures/wine.jpg"
+    "duration": "4h-6h",
+    "picture": "/assets/pictures/gray-whale.jpg"
   },
   {
-    "name": "Lorem ipsum dolor sit 6",
-    "price": "$$$",
-    "location": "Tijuana",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a purus ornare, vehicula magna vitae, tempor metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec laoreet sed lorem ac interdum. Etiam ut neque egestas, mattis mi vel, dignissim lorem.",
-    "type": "Group tour",
-    "duration": "2h - 12h",
-    "picture":"/assets/pictures/wine.jpg"
+    "name": "Puerto Nuevo Lobster Tour",
+    "price": "$100 US / Person",
+    "location": "Rosarito, B.C.",
+    "description": "Puerto Nuevo Lobster Village, once a small fishing village, is now home to over 50 different restaurants offering the house specialty, Puerto Nuevo style lobster meals. This lobster meal is a Pacific Ocean lobster fried to perfection, the meal also includes rice, beans, and a welcome Margarita!",
+    "type": "Private tour",
+    "duration": "2h",
+    "picture": "/assets/pictures/puerto-nuevo.jpg"
   },
   {
-    "name": "Lorem ipsum dolor sit 7" ,
-    "price": "$$$",
-    "location": "Tijuana",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a purus ornare, vehicula magna vitae, tempor metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec laoreet sed lorem ac interdum. Etiam ut neque egestas, mattis mi vel, dignissim lorem.",
+    "name": "Tour San Pedro Martir",
+    "price": "$150 US / Person",
+    "location": "Ensenada, B.C.",
+    "description": "Get to know the Sierra San Pedro Martir, a wooded and impressive area, you can enjoy recreational activities and extreme sports such as rappelling, mountaineering, hiking, etc.",
     "type": "Group tour",
-    "duration": "2h - 12h",
-    "picture":"/assets/pictures/wine.jpg"
-  },
-  {
-    "name": "Lorem ipsum dolor sit 8",
-    "price": "$$$",
-    "location": "Tijuana",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a purus ornare, vehicula magna vitae, tempor metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec laoreet sed lorem ac interdum. Etiam ut neque egestas, mattis mi vel, dignissim lorem.",
-    "type": "Group tour",
-    "duration": "2h - 12h",
-    "picture":"/assets/pictures/wine.jpg"
-  }, {
-    "name": "Lorem ipsum dolor sit 9",
-    "price": "$$$",
-    "location": "Tijuana",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a purus ornare, vehicula magna vitae, tempor metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec laoreet sed lorem ac interdum. Etiam ut neque egestas, mattis mi vel, dignissim lorem.",
-    "type": "Group tour",
-    "duration": "2h - 12h",
-    "picture":"/assets/pictures/wine.jpg"
-  },
-  {
-    "name": "Lorem ipsum dolor sit 10",
-    "price": "$$$",
-    "location": "Tijuana",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a purus ornare, vehicula magna vitae, tempor metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec laoreet sed lorem ac interdum. Etiam ut neque egestas, mattis mi vel, dignissim lorem.",
-    "type": "Group tour",
-    "duration": "2h - 12h",
-    "picture":"/assets/pictures/wine.jpg"
-  },
-  {
-    "name": "Lorem ipsum dolor sit 11" ,
-    "price": "$$$",
-    "location": "Tijuana",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a purus ornare, vehicula magna vitae, tempor metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec laoreet sed lorem ac interdum. Etiam ut neque egestas, mattis mi vel, dignissim lorem.",
-    "type": "Group tour",
-    "duration": "2h - 12h",
-    "picture":"/assets/pictures/wine.jpg"
-  },
-  {
-    "name": "Lorem ipsum dolor sit 12",
-    "price": "$$$",
-    "location": "Tijuana",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a purus ornare, vehicula magna vitae, tempor metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec laoreet sed lorem ac interdum. Etiam ut neque egestas, mattis mi vel, dignissim lorem.",
-    "type": "Group tour",
-    "duration": "2h - 12h",
-    "picture":"/assets/pictures/wine.jpg"
+    "duration": "12h-16h",
+    "picture": "/assets/pictures/san-pedro.jpg"
   }
 ]

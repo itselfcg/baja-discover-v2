@@ -1,7 +1,10 @@
 @import "../../_variables.scss";
 
 $picture-height: 35em;
-
+@font-face {
+  font-family: 'Sansita Swashed';
+  src: url('/assets/fonts/SansitaSwashed-Regular.ttf') format("opentype");
+}
 #home {
   background-image: url("/assets/pictures/home.jpg");
   background-size: cover;
@@ -15,6 +18,14 @@ $picture-height: 35em;
   width: 80%;
   top: 20em;
   color: white;
+}
+
+h5{
+  font-family: 'Sansita Swashed';
+
+}
+p{
+  font-size: 20px!important;
 }
 
 .highlight {
