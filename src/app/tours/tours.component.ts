@@ -20,11 +20,13 @@ import tours from '../../_files/tours.json';
       transition(
         ':enter',
         [
-          style({ transform: 'translateX(0%)' }),
-          animate('500ms ease-in-out', style({ transform: 'translateX({{translate}}%)' })),
+          style({ opacity:0 }),
+          animate('500ms ease-in', style({ opacity:1 })),
         ],
-        { params: { translate: '100' } }
+        { params: { translate: '100' } },
+
       ),
+
     ]),
   ],
 })
