@@ -29,8 +29,9 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "node_modules/aos/dist/aos.css",
-              "src/styles.scss",
-              "node_modules/bootstrap-icons/font/bootstrap-icons.css"
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+              "src/styles.scss"
             ],
 
             "scripts": [
@@ -45,7 +46,7 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
+                  "maximumWarning": "2mb",
                   "maximumError": "1mb"
                 },
                 {
