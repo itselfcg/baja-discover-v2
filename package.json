@@ -12,6 +12,9 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-devkit/build-angular": "~12.1.1",
+    "@angular/cli": "~12.1.1",
+    "@angular/compiler-cli": "~12.1.1",
     "@angular/animations": "~12.1.1",
     "@angular/common": "~12.1.1",
     "@angular/compiler": "~12.1.1",
@@ -22,6 +25,7 @@
     "@angular/router": "~12.1.1",
     "@popperjs/core": "^2.9.3",
     "aos": "^2.3.4",
+    "@types/aos": "^3.0.4",
     "bootstrap": "^5.0.0-beta3",
     "bootstrap-icons": "^1.5.0",
     "express": "^4.17.1",
