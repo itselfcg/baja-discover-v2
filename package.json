@@ -1,12 +1,14 @@
 {
   "name": "baja-discover-v2",
   "version": "0.0.0",
+  "engines": {
+    "node": "12.14.1",
+    "npm": "7.19.1"
+  },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "start": "node server.js",
+    "build": "ng build --prod"
   },
   "private": true,
   "dependencies": {
