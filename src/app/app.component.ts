@@ -1,4 +1,5 @@
-import { HostListener } from '@angular/core';
+import { trigger, transition, style, animate } from '@angular/animations';
+import { AfterViewInit, HostListener } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
 declare var $: any;
@@ -7,27 +8,39 @@ declare var $: any;
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  animations: [
+    trigger('fadeIn', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('1s ease-in', style({ opacity: 1 })),
+      ]),
+    ]),
+  ],
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit,AfterViewInit {
+  loading = true;
   title = 'baja-discover-v2';
-  ngOnInit(): void {
+
+
+  ngOnInit() {
     AOS.init({ once: true });
-    $('.scrollup').stop().fadeOut(100);
   }
+
 
   ngAfterViewInit() {
     window.addEventListener('load', AOS.refresh);
+    this.loading = false;
   }
 
   @HostListener('window:scroll', ['$event'])
   onScroll(event: Event) {
     var x = $(document).scrollTop();
     if (x > 500) {
-      $('.scrollup').stop().fadeIn(100);
-      $('.scrolldown').stop().fadeOut(100);
+      $('.scrollup').show();
+      $('.scrolldown').hide();
     } else {
-      $('.scrolldown').stop().fadeIn(100);
-      $('.scrollup').stop().fadeOut(100);
+      $('.scrolldown').show();
+      $('.scrollup').hide();
     }
   }
 }

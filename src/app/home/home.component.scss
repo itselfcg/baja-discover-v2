@@ -2,8 +2,8 @@
 
 $picture-height: 35em;
 @font-face {
-  font-family: 'Sansita Swashed';
-  src: url('/assets/fonts/SansitaSwashed-Regular.ttf') format("opentype");
+  font-family: "Sansita Swashed";
+  src: url("/assets/fonts/SansitaSwashed-Regular.ttf") format("opentype");
 }
 #home {
   background-image: url("/assets/pictures/home.jpg");
@@ -11,44 +11,43 @@ $picture-height: 35em;
   background-color: gray;
   height: 100vh;
   min-height: 800px;
-}
 
-.title {
-  position: relative;
-  width: 80%;
-  top: 20em;
-  color: white;
-}
-
-h5{
-  font-family: 'Sansita Swashed';
-
-}
-p{
-  font-size: 20px!important;
-}
-
-.highlight {
-  white-space: nowrap;
-}
-
-@media (max-width: 768px) {
   .title {
-    top: 15em;
+    position: relative;
+    width: 80%;
+    top: 20em;
+    color: white;
+  }
+
+  h5 {
+    font-family: "Sansita Swashed";
+  }
+  p {
+    font-size: 20px !important;
   }
 
   .highlight {
-    word-spacing: 0px;
+    white-space: nowrap;
   }
-}
-@media (max-width: 500px) {
-  .break-text {
-    word-spacing: 9999999px;
-  }
-}
 
-@media (min-width: 768px) {
-  #about {
-    margin: 10em 0 7.5em 0;
+  @media (max-width: 768px) {
+    .title {
+      top: 15em;
+    }
+
+    .highlight {
+      word-spacing: 0px;
+    }
+  }
+  @media (max-width: 500px) {
+    .break-text {
+      word-spacing: 9999999px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #about {
+      margin: 10em 0 7.5em 0;
+    }
   }
 }
